@@ -52,7 +52,7 @@ Car2.printProps();
 // call the OOP-Method with params
 //console.log(calc.calcPercentValue(10, 90)); // calculates 10% from 90
 
-let a: boolean = false;
+// let a: boolean = false;
 
 
 if (Car1.carOwner() === Car2.carOwner()) {
