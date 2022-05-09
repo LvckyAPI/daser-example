@@ -55,7 +55,7 @@ Car2.printProps();
 // let a: boolean = false;
 
 
-if (Car1.carOwner() === Car2.carOwner()) {
+if (Car1.owner() === Car2.owner()) {
     console.log('selber besitzer');
 } else {
     console.log('Nicht selber Besitzer');

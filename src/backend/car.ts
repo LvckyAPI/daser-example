@@ -1,31 +1,34 @@
 export class Car {
 
-    private plate;
-    private color;
-    private owner;
+    private cplate: any;
+    private ccolor: any;
+    private cowner: any;
 
-    public constructor(plate, color, owner) {
-        this.plate = plate;
-        this.color = color;
-        this.owner = owner;
+    public constructor(plate: string, color: string, owner: string) {
+        this.cplate = plate;
+        this.ccolor = color;
+        this.cowner = owner;
     }
 
-    /**
-     * Log Output
-     */
     public printProps() {
         console.log(
             `
-            Kennzeichen: ${this.plate}
-            Farbe: ${this.color}
-            Besitzer: ${this.owner}
+            Kennzeichen: ${this.cplate}
+            Farbe: ${this.ccolor}
+            Besitzer: ${this.cowner}
             `
-            );
-        
+        );
     }
 
-    public carOwner() {
-        return this.owner;
+    public plate() {
+        return this.ccolor;
+    }
+
+    public color() {
+        return this.ccolor;
+    }
+    public owner() {
+        return this.cowner;
     }
 
 }
