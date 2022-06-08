@@ -1,5 +1,7 @@
+import * as api from 'lvckyworld-api';
+/* 
 import * as handler from './backend/car';
-import * as calc from './backend/simpleCalculator';
+import * as calc from './backend/simpleCalculator'; */
 
 
 /* 
@@ -14,22 +16,22 @@ import * as calc from './backend/simpleCalculator';
 */
 
 // call constructor and create Car object with params
-let Car1 = new handler.Car(
+/* let Car1 = new handler.Car(
     'MD DASER 1945', // plate
     'Rot', // color
     'Daser' //owner
 );
+ */
 
-
-let Car2 = new handler.Car(
+/* let Car2 = new handler.Car(
     'MD SHIZU 1945', // plate
     'Pink', // color
     'Roudges' //owner
-);
+); */
 
 // call the printPrips method from Construcor
-Car1.printProps();
-Car2.printProps();
+/* Car1.printProps();
+Car2.printProps(); */
 
 
 
@@ -56,8 +58,13 @@ Car2.printProps();
 // let a: boolean = false;
 
 
-if (Car1.owner() === Car2.owner()) {
+/* if (Car1.owner() === Car2.owner()) {
     console.log('selber besitzer');
 } else {
     console.log('Nicht selber Besitzer');
-}
+} */
+
+api.MARINA.getDiscordUserInfo('641266097768890408').then(res => {
+    console.log(res.username);
+    
+})
